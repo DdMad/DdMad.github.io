@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[DdMad]]></title>
+  <title><![CDATA[DdMad's Blog]]></title>
   <subtitle><![CDATA[love life, love coding, love ddmad...]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://ddmad.com/"/>
@@ -8,7 +8,7 @@
   <id>http://ddmad.com/</id>
   
   <author>
-    <name><![CDATA[ddmad]]></name>
+    <name><![CDATA[Dd__Mad]]></name>
     
   </author>
   
