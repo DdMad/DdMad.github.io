@@ -4,7 +4,7 @@
   <subtitle><![CDATA[love life, love coding, love ddmad...]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://ddmad.com/"/>
-  <updated>2015-11-30T06:55:29.000Z</updated>
+  <updated>2015-11-30T06:59:04.000Z</updated>
   <id>http://ddmad.com/</id>
   
   <author>
@@ -13,6 +13,19 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Test4]]></title>
+    <link href="http://ddmad.com/2015/11/30/Test4/"/>
+    <id>http://ddmad.com/2015/11/30/Test4/</id>
+    <published>2015-11-30T06:59:04.000Z</published>
+    <updated>2015-11-30T06:59:04.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Test3]]></title>
