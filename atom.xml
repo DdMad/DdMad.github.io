@@ -4,7 +4,7 @@
   <subtitle><![CDATA[love life, love coding, love ddmad...]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://ddmad.com/"/>
-  <updated>2015-12-01T08:54:43.000Z</updated>
+  <updated>2015-12-01T08:55:50.000Z</updated>
   <id>http://ddmad.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="http://ddmad.com/2015/12/01/plan-for-y3s2/"/>
     <id>http://ddmad.com/2015/12/01/plan-for-y3s2/</id>
     <published>2015-12-01T07:43:54.000Z</published>
-    <updated>2015-12-01T08:54:43.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="Schedule"><strong>Schedule</strong></h1><p>This is the schedule for the Year 3 Semester 2. Although there seems to be a lot of stuff to learn, and I may not complete all of them within one semester, I’ll try my best to follow the schedule. Some details may be altered according to time limitation.</p>
+    <updated>2015-12-01T08:55:50.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="Schedule"><strong>Schedule</strong></h1><p>This is the schedule for the Year 3 Semester 2. Although there seems to be a lot of stuff to learn, and I may not complete all of them within one semester, I’ll try my best to follow the schedule. Some details may be altered according to time limitation.<br><a id="more"></a></p>
 <h2 id="ATAP"><strong>ATAP</strong></h2><h3 id="IBM"><strong>IBM</strong></h3><p>From Jan 4 to Jun 17, 2016</p>
 <h2 id="Self_Learning"><strong>Self Learning</strong></h2><h3 id="Online_Judge_Training"><strong>Online Judge Training</strong></h3><ul>
 <li><a href="https://leetcode.com" target="_blank" rel="external">Leetcode</a></li>
@@ -89,7 +89,8 @@
 <p><strong><em>DdMad</em></strong></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h1 id="Schedule"><strong>Schedule</strong></h1><p>This is the schedule for the Year 3 Semester 2. Although there seems to be a lot of stuff]]>
+    <![CDATA[<h1 id="Schedule"><strong>Schedule</strong></h1><p>This is the schedule for the Year 3 Semester 2. Although there seems to be a lot of stuff to learn, and I may not complete all of them within one semester, I’ll try my best to follow the schedule. Some details may be altered according to time limitation.<br>]]>
+    
     </summary>
     
       <category term="schedule" scheme="http://ddmad.com/tags/schedule/"/>
