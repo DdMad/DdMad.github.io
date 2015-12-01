@@ -4,7 +4,7 @@
   <subtitle><![CDATA[love life, love coding, love ddmad...]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://ddmad.com/"/>
-  <updated>2015-12-01T08:49:21.000Z</updated>
+  <updated>2015-12-01T08:51:34.000Z</updated>
   <id>http://ddmad.com/</id>
   
   <author>
@@ -19,16 +19,16 @@
     <link href="http://ddmad.com/2015/12/01/plan-for-y3s2/"/>
     <id>http://ddmad.com/2015/12/01/plan-for-y3s2/</id>
     <published>2015-12-01T07:43:54.000Z</published>
-    <updated>2015-12-01T08:49:21.000Z</updated>
+    <updated>2015-12-01T08:51:34.000Z</updated>
     <content type="html"><![CDATA[<h1 id="Schedule">Schedule</h1><p>This is the schedule for the Year 3 Semester 2. Although there seems to be a lot of stuff to learn, and I may not complete all of them within one semester, I’ll try my best to follow the schedule. Some details may be altered according to time limitation.</p>
-<h2 id="ATAP">ATAP</h2><h3 id="IBM">IBM</h3><p>From Jan 4 to Jun 17, 2016</p>
-<h2 id="Self_Learning">Self Learning</h2><h3 id="Online_Judge_Training">Online Judge Training</h3><ul>
+<h2 id="ATAP">ATAP</h2><h4 id="IBM">IBM</h4><p>From Jan 4 to Jun 17, 2016</p>
+<h2 id="Self_Learning">Self Learning</h2><h4 id="Online_Judge_Training">Online Judge Training</h4><ul>
 <li><a href="https://leetcode.com" target="_blank" rel="external">Leetcode</a></li>
 <li><a href="http://www.lintcode.com" target="_blank" rel="external">Lintcode</a></li>
 <li><a href="https://www.hackerrank.com" target="_blank" rel="external">HackerRank</a></li>
 <li>May add more …</li>
 </ul>
-<h3 id="New_Knowledge">New Knowledge</h3><ul>
+<h4 id="New_Knowledge">New Knowledge</h4><ul>
 <li><strong>Node.js + Express</strong><ul>
 <li>Try to create a working website which server side is based on Node.js</li>
 <li>Maybe learning Socket.io as well</li>
@@ -55,7 +55,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="Review">Review</h3><ul>
+<h4 id="Review">Review</h4><ul>
 <li><strong>Data Structures and Algorithms</strong></li>
 <li><strong>Operating System</strong></li>
 <li><strong>Database</strong></li>
