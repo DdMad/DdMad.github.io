@@ -4,7 +4,7 @@
   <subtitle><![CDATA[love life, love coding, love ddmad...]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://ddmad.com/"/>
-  <updated>2015-12-01T08:55:50.000Z</updated>
+  <updated>2016-03-02T17:47:53.000Z</updated>
   <id>http://ddmad.com/</id>
   
   <author>
@@ -13,6 +13,87 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Upload iOS App to TestFlight]]></title>
+    <link href="http://ddmad.com/2016/03/02/Upload-iOS-App-to-TestFlight/"/>
+    <id>http://ddmad.com/2016/03/02/Upload-iOS-App-to-TestFlight/</id>
+    <published>2016-03-02T04:23:44.000Z</published>
+    <updated>2016-03-02T17:47:53.000Z</updated>
+    <content type="html"><![CDATA[<p>This is my first time to upload an iOS app, created by ionic, to AppStore (or TestFlight), and it costs a lot of time. Finally and fortunately, uploading is successful. Now I’ll explain how to do that, and also I can also recall this for future use.<br><a id="more"></a></p>
+<h1 id="Getting_Started">Getting Started <span id="getting-started"></span></h1><p>First of all, you need to ensure your ionic project can be built in Xcode and run in emulators or real iOS devices.</p>
+<p>Something you need to prepare:</p>
+<ul>
+<li><p>Apple Developer Account <span id="apple-developer-accoutn"></span><br>You can get this from <a href="https://developer.apple.com/programs/" target="_blank" rel="external">Apple Developer Program</a> with $99 per year.</p>
+</li>
+<li><p>Valid Certificate for iPhone Distribution <span id="valid-certificate-for-iphone-distribution"></span><br>You can check it in your <strong>Keychain Access</strong> (Open Spotlight by <code>CMD + Whitespace</code> and search <strong>Keychain Access</strong>).<br>If your certificate is shown as invalid or not valid issued, it might mean you install new WWDR intermediate certificate for your certificate:</p>
+</li>
+</ul>
+<ol>
+<li>Download new <a href="https://developer.apple.com/certificationauthority/AppleWWDRCA.cer" target="_blank" rel="external">WWDR intermediate certificate</a>.</li>
+<li>Install the <strong>WWDR intermediate certificate</strong> by double-clicking on the file.</li>
+<li>Select <strong>View</strong> -&gt; <strong>Show Expired Certificates</strong> in Keychain Access to show show the expired certificates and delete the expired version of the <strong>Apple Worldwide Developer Relations Certificate Authority Intermediate certificate</strong> if any exists.</li>
+<li>Then you should see your certicate like this:<br><img src="/images/Upload-iOS-App-to-TestFlight/keychain-success.png" alt="Keychain success"></li>
+</ol>
+<ul>
+<li>New Bundle Identifier for Your App <span id="new-bundle-identifier-for-your-app"></span><br>You can create a new id in <a href="https://developer.apple.com/account/ios/identifiers/bundle/bundleCreate.action" target="_blank" rel="external">Apple Developer: Certificates, Identifiers &amp; Profiles</a>.</li>
+</ul>
+<h1 id="Submitting_Your_Build_to_iTunes_Connect">Submitting Your Build to iTunes Connect <span id="submitting-your-build-to-itunes-connect"></span></h1><p>Open up your ionic iOS project in Xcode. You can find your Xcode project file here: <strong><ionic project="" directory="">/platforms/ios/<ionic project="" name="">.xcodeproj</ionic></ionic></strong>.</p>
+<p>Verify the project has the correct Bundle Identifier you have created, and you have chosen the correct Distribution Certificate under <strong>Code Signing</strong> -&gt; <strong>Release</strong> in <strong>Build Settings</strong> (same certificates in Keychain Access):<br><img src="/images/Upload-iOS-App-to-TestFlight/code-signing.png" alt="Code Signing"></p>
+<p>Select <strong>Product</strong> -&gt; <strong>Archive</strong> from the top menu bar.</p>
+<p>After Xcode finishes archiving your project, click the <strong>Submit to App Store…</strong>.</p>
+<p>Choose your correct account and click <strong>Submit</strong> button. </p>
+<p>It may take a while as your build is uploaded.</p>
+<p>Once it completes, you should see the success message like this:</p>
+<h2 id="Some_problems_here:">Some problems here: <span id="some-problems-here"></span></h2><ul>
+<li><p>No <strong>Submit to App Store…</strong> button<br>This is because the account you use is not enrolled in <a href="https://developer.apple.com/programs/" target="_blank" rel="external">Apple Developer Program</a>. Check the <a href="#apple-developer-account">Apple Developer Account</a>.</p>
+</li>
+<li><p>Missing Developer Profile or Valid Signing Identity Not Found<br>This is because you use wrong iPhone Distribution Certificate or your certificate in the KeyChain Access is invalid or expired. Check the <a href="#valid-certificate-for-iphone-distribution">Valid Certificate for iPhone Distribution</a>.</p>
+</li>
+<li><p>No Suitable Record Found Verify Your Bundle Identifier Correct<br>This is because you may enter the wrong bundle identifer for the project. Check <a href="#new-bundle-identifier-for-your-app">New Bundle Identifier for Your App</a>.</p>
+</li>
+<li><p>Invalid Image Path for CFBundleIconFile<br>This is because some bug of cordova or Xccode, and it is supposed to remove this key value pair in the <your-project-name>-Info.plist automatically. The solution is go to path <strong><project root="" directory="">/platforms/ios/<project-name>/<your-project-name>-Info.plist</your-project-name></project-name></project></strong> and just remove the <strong><key></key></strong> and <strong><string></string></strong> tags of CFBundleIconFile.</your-project-name></p>
+</li>
+<li><p>Invalid Bundle Structure - XXX Not Permitted and May Contain Only One Executable<br>This is because you have included some other executable files in your project directory. Sometimes it happens because you include some external library. For ionic app, it may be because of including some phonegap library (eg. phonegap-plugin-push). The solution is just remove the files or the folder containing those files mentioned in the error message.</p>
+</li>
+<li><p>Get Stuck while Uploading and Action Failed<br>This is because your network is not good enough to upload the build. Change a network and try again.</p>
+</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>This is my first time to upload an iOS app, created by ionic, to AppStore (or TestFlight), and it costs a lot of time. Finally and fortunately, uploading is successful. Now I’ll explain how to do that, and also I can also recall this for future use.<br>]]>
+    
+    </summary>
+    
+      <category term="TestFlight" scheme="http://ddmad.com/tags/TestFlight/"/>
+    
+      <category term="iOS" scheme="http://ddmad.com/tags/iOS/"/>
+    
+      <category term="ionic" scheme="http://ddmad.com/tags/ionic/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://ddmad.com/2016/02/28/hello-world/"/>
+    <id>http://ddmad.com/2016/02/28/hello-world/</id>
+    <published>2016-02-27T17:12:01.000Z</published>
+    <updated>2015-11-30T08:00:24.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Schedule For Year 3 Sem 2]]></title>
@@ -108,28 +189,6 @@
     <summary type="html">
     <![CDATA[<p>This is the first post from Dd__Mad!</p>
 ]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://ddmad.com/2015/11/30/hello-world/"/>
-    <id>http://ddmad.com/2015/11/30/hello-world/</id>
-    <published>2015-11-30T08:00:24.000Z</published>
-    <updated>2015-11-30T08:00:24.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
     </summary>
     
   </entry>
