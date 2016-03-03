@@ -4,7 +4,7 @@
   <subtitle><![CDATA[love life, love coding, love ddmad...]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://ddmad.com/"/>
-  <updated>2016-03-02T17:48:19.000Z</updated>
+  <updated>2016-03-03T07:42:58.000Z</updated>
   <id>http://ddmad.com/</id>
   
   <author>
@@ -15,11 +15,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[Jackson: Java Parsing Json Library]]></title>
+    <link href="http://ddmad.com/2016/03/03/Jackson-Java-Parsing-Json-Library/"/>
+    <id>http://ddmad.com/2016/03/03/Jackson-Java-Parsing-Json-Library/</id>
+    <published>2016-03-03T07:40:23.000Z</published>
+    <updated>2016-03-03T07:42:58.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="JSON" scheme="http://ddmad.com/tags/JSON/"/>
+    
+      <category term="Jackson" scheme="http://ddmad.com/tags/Jackson/"/>
+    
+      <category term="Java" scheme="http://ddmad.com/tags/Java/"/>
+    
+      <category term="POJO" scheme="http://ddmad.com/tags/POJO/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Upload iOS App to TestFlight]]></title>
     <link href="http://ddmad.com/2016/03/02/Upload-iOS-App-to-TestFlight/"/>
     <id>http://ddmad.com/2016/03/02/Upload-iOS-App-to-TestFlight/</id>
     <published>2016-03-02T04:23:44.000Z</published>
-    <updated>2016-03-02T17:48:19.000Z</updated>
+    <updated>2016-03-03T13:53:15.000Z</updated>
     <content type="html"><![CDATA[<p>This is my first time to upload an iOS app, created by ionic, to AppStore (or TestFlight), and it costs a lot of time. Finally and fortunately, uploading is successful. Now I’ll explain how to do that, and also I can also recall this for future use.<br><a id="more"></a></p>
 <h1 id="Getting_Started">Getting Started <span id="getting-started"></span></h1><p>First of all, you need to ensure your ionic project can be built in Xcode and run in emulators or real iOS devices.</p>
 <p>Something you need to prepare:</p>
@@ -36,7 +57,7 @@
 <li>Then you should see your certicate like this:<br><img src="/images/Upload-iOS-App-to-TestFlight/keychain-success.png" alt="Keychain success"></li>
 </ol>
 <ul>
-<li>New Bundle Identifier for Your App <span id="new-bundle-identifier-for-your-app"></span><br>You can create a new id in <a href="https://developer.apple.com/account/ios/identifiers/bundle/bundleCreate.action" target="_blank" rel="external">Apple Developer: Certificates, Identifiers &amp; Profiles</a>.</li>
+<li>New Bundle Identifier for Your App <span id="new-bundle-identifier-for-your-app"></span><br>You can create a new id in <a href="https://developer.apple.com/account/ios/identifiers/bundle/bundleCreate.action" target="_blank" rel="external">Apple Developer: Certificates, Identifiers &amp; Profiles</a>.<br>And then you also need to create your app with the created bundle identifier in <a href="https://itunesconnect.apple.com/" target="_blank" rel="external">iTunes Connect</a>.</li>
 </ul>
 <h1 id="Submitting_Your_Build_to_iTunes_Connect">Submitting Your Build to iTunes Connect <span id="submitting-your-build-to-itunes-connect"></span></h1><p>Open up your ionic iOS project in Xcode. You can find your Xcode project file here: <strong><ionic project="" directory="">/platforms/ios/<ionic project="" name="">.xcodeproj</ionic></ionic></strong>.</p>
 <p>Verify the project has the correct Bundle Identifier you have created, and you have chosen the correct Distribution Certificate under <strong>Code Signing</strong> -&gt; <strong>Release</strong> in <strong>Build Settings</strong> (same certificates in Keychain Access):<br><img src="/images/Upload-iOS-App-to-TestFlight/code-signing.png" alt="Code Signing"></p>
