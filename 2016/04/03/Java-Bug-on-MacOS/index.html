@@ -3,17 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: TestFlight | DdMad&#39;s Blog</title>
+  <title>Java-Bug-on-MacOS | DdMad&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="DdMad's Blog">
-<meta property="og:url" content="http://ddmad.com/tags/TestFlight/index.html">
+  <meta name="description" content="While using the Mayocat, I have encountered that the theme page cannot load css and js correctly. The browser said that it did not parse the css and js file due to some CSS MIME and strict mode error.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java-Bug-on-MacOS">
+<meta property="og:url" content="http://ddmad.com/2016/04/03/Java-Bug-on-MacOS/index.html">
 <meta property="og:site_name" content="DdMad's Blog">
-<meta property="og:description">
+<meta property="og:description" content="While using the Mayocat, I have encountered that the theme page cannot load css and js correctly. The browser said that it did not parse the css and js file due to some CSS MIME and strict mode error.">
+<meta property="og:image" content="http://ddmad.com/images/Java-Bug-on-MacOS/mayocat-bug.png">
+<meta property="og:image" content="http://ddmad.com/images/Java-Bug-on-MacOS/oracle-bug.png">
+<meta property="og:updated_time" content="2016-04-02T20:29:55.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DdMad's Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Java-Bug-on-MacOS">
+<meta name="twitter:description" content="While using the Mayocat, I have encountered that the theme page cannot load css and js correctly. The browser said that it did not parse the css and js file due to some CSS MIME and strict mode error.">
   
   
     <link rel="icon" href="/favicon.jpg">
@@ -162,53 +165,75 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-Java-Bug-on-MacOS" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/03/02/Upload-iOS-App-to-TestFlight/" class="archive-article-date">
-  	<time datetime="2016-03-02T04:23:44.000Z" itemprop="datePublished">Mar 2</time>
+    <div class="article-meta">
+      <a href="/2016/04/03/Java-Bug-on-MacOS/" class="article-date">
+  	<time datetime="2016-04-02T20:04:53.000Z" itemprop="datePublished">2016-04-03</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/03/02/Upload-iOS-App-to-TestFlight/">Upload iOS App to TestFlight</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Java-Bug-on-MacOS
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TestFlight/">TestFlight</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ionic/">ionic</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MacOSX/">MacOSX</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bug/">bug</a></li></ul>
 	</div>
 
-          
+        
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>While using the <a href="http://www.mayocat.org" target="_blank" rel="external">Mayocat</a>, I have encountered that the theme page cannot load css and js correctly. The browser said that it did not parse the css and js file due to some CSS MIME and strict mode error. Then after checking the response header, I found the reason which was the header “Content-type” was set to “octet-stream”, which was supposed to be “text/css” or “application/javascript”.<br><a id="more"></a></p>
+<p>After searching through <a href="https://github.com/mayocat/mayocat-shop" target="_blank" rel="external">repository of Mayocat</a>, I found this:</p>
+<p><img src="/images/Java-Bug-on-MacOS/mayocat-bug.png" alt="Mayocat Bug"></p>
+<p>And then followed the link, and found this:</p>
+<p><img src="/images/Java-Bug-on-MacOS/oracle-bug.png" alt="Oracle Bug"></p>
+<p>And then I found out that this bug was cause by JDK7, package <code>java.nio.file</code>, method <code>probeContentType(Path path)</code> and this feature was broken on Mac OS X (<a href="http://blog.byjean.eu/java/2013/08/22/making-jdk7-nio-filetypedetection-work-on-mac-osx.html" target="_blank" rel="external">More details here</a>). </p>
+<p>However, this bug should be fixed in JDK8, mine was still not working although my working environment was under JDK8. Then I checked the <a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8008345" target="_blank" rel="external">Oracle Bug Database</a> and it seems that it need a file <code>.mime.types</code>(you can download one <a href="https://github.com/jeantil/jdk7-mimeutils/raw/v1.0.0/mime.types" target="_blank" rel="external">sample file here</a> or simply get it from your <strong>apache server</strong> or <strong>nginx server</strong>) in $HOME/ directory.</p>
+<p>After adding the file <code>.mime.types</code> to <code>~/</code> (remember to clear the browser cache!), everything was ok then:).</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/03/03/Jackson-Java-Parsing-Json-Library/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Jackson: Java Parsing Json Library</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
 
 </div>
       <footer id="footer">
@@ -234,9 +259,9 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}

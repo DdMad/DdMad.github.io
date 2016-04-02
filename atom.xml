@@ -4,7 +4,7 @@
   <subtitle><![CDATA[love life, love coding, love ddmad...]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://ddmad.com/"/>
-  <updated>2016-03-03T15:21:08.000Z</updated>
+  <updated>2016-04-02T20:29:55.000Z</updated>
   <id>http://ddmad.com/</id>
   
   <author>
@@ -13,6 +13,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Java-Bug-on-MacOS]]></title>
+    <link href="http://ddmad.com/2016/04/03/Java-Bug-on-MacOS/"/>
+    <id>http://ddmad.com/2016/04/03/Java-Bug-on-MacOS/</id>
+    <published>2016-04-02T20:04:53.000Z</published>
+    <updated>2016-04-02T20:29:55.000Z</updated>
+    <content type="html"><![CDATA[<p>While using the <a href="http://www.mayocat.org" target="_blank" rel="external">Mayocat</a>, I have encountered that the theme page cannot load css and js correctly. The browser said that it did not parse the css and js file due to some CSS MIME and strict mode error. Then after checking the response header, I found the reason which was the header “Content-type” was set to “octet-stream”, which was supposed to be “text/css” or “application/javascript”.<br><a id="more"></a></p>
+<p>After searching through <a href="https://github.com/mayocat/mayocat-shop" target="_blank" rel="external">repository of Mayocat</a>, I found this:</p>
+<p><img src="/images/Java-Bug-on-MacOS/mayocat-bug.png" alt="Mayocat Bug"></p>
+<p>And then followed the link, and found this:</p>
+<p><img src="/images/Java-Bug-on-MacOS/oracle-bug.png" alt="Oracle Bug"></p>
+<p>And then I found out that this bug was cause by JDK7, package <code>java.nio.file</code>, method <code>probeContentType(Path path)</code> and this feature was broken on Mac OS X (<a href="http://blog.byjean.eu/java/2013/08/22/making-jdk7-nio-filetypedetection-work-on-mac-osx.html" target="_blank" rel="external">More details here</a>). </p>
+<p>However, this bug should be fixed in JDK8, mine was still not working although my working environment was under JDK8. Then I checked the <a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8008345" target="_blank" rel="external">Oracle Bug Database</a> and it seems that it need a file <code>.mime.types</code>(you can download one <a href="https://github.com/jeantil/jdk7-mimeutils/raw/v1.0.0/mime.types" target="_blank" rel="external">sample file here</a> or simply get it from your <strong>apache server</strong> or <strong>nginx server</strong>) in $HOME/ directory.</p>
+<p>After adding the file <code>.mime.types</code> to <code>~/</code> (remember to clear the browser cache!), everything was ok then:).</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>While using the <a href="http://www.mayocat.org">Mayocat</a>, I have encountered that the theme page cannot load css and js correctly. The browser said that it did not parse the css and js file due to some CSS MIME and strict mode error. Then after checking the response header, I found the reason which was the header “Content-type” was set to “octet-stream”, which was supposed to be “text/css” or “application/javascript”.<br>]]>
+    
+    </summary>
+    
+      <category term="Java" scheme="http://ddmad.com/tags/Java/"/>
+    
+      <category term="MacOSX" scheme="http://ddmad.com/tags/MacOSX/"/>
+    
+      <category term="bug" scheme="http://ddmad.com/tags/bug/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Jackson: Java Parsing Json Library]]></title>
