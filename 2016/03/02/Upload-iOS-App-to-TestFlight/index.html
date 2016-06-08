@@ -17,11 +17,12 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Upload iOS App to TestFlight">
 <meta name="twitter:description" content="This is my first time to upload an iOS app, created by ionic, to AppStore (or TestFlight), and it costs a lot of time. Finally and fortunately, uploading is successful. Now I’ll explain how to do that">
+<meta name="twitter:image" content="http://ddmad.com/images/Upload-iOS-App-to-TestFlight/keychain-success.png">
   
   
     <link rel="icon" href="/favicon.jpg">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <div id="container">
@@ -203,7 +204,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>This is my first time to upload an iOS app, created by ionic, to AppStore (or TestFlight), and it costs a lot of time. Finally and fortunately, uploading is successful. Now I’ll explain how to do that, and also I can also recall this for future use.<br><a id="more"></a></p>
-<h1 id="Getting_Started">Getting Started <span id="getting-started"></span></h1><p>First of all, you need to ensure your ionic project can be built in Xcode and run in emulators or real iOS devices.</p>
+<h1 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started "></a>Getting Started <span id="getting-started"></span></h1><p>First of all, you need to ensure your ionic project can be built in Xcode and run in emulators or real iOS devices.</p>
 <p>Something you need to prepare:</p>
 <ul>
 <li><p>Apple Developer Account <span id="apple-developer-accoutn"></span><br>You can get this from <a href="https://developer.apple.com/programs/" target="_blank" rel="external">Apple Developer Program</a> with $99 per year.</p>
@@ -220,14 +221,14 @@
 <ul>
 <li>New Bundle Identifier for Your App <span id="new-bundle-identifier-for-your-app"></span><br>You can create a new id in <a href="https://developer.apple.com/account/ios/identifiers/bundle/bundleCreate.action" target="_blank" rel="external">Apple Developer: Certificates, Identifiers &amp; Profiles</a>.<br>And then you also need to create your app with the created bundle identifier in <a href="https://itunesconnect.apple.com/" target="_blank" rel="external">iTunes Connect</a>.</li>
 </ul>
-<h1 id="Submitting_Your_Build_to_iTunes_Connect">Submitting Your Build to iTunes Connect <span id="submitting-your-build-to-itunes-connect"></span></h1><p>Open up your ionic iOS project in Xcode. You can find your Xcode project file here: <strong><ionic project="" directory="">/platforms/ios/<ionic project="" name="">.xcodeproj</ionic></ionic></strong>.</p>
+<h1 id="Submitting-Your-Build-to-iTunes-Connect"><a href="#Submitting-Your-Build-to-iTunes-Connect" class="headerlink" title="Submitting Your Build to iTunes Connect "></a>Submitting Your Build to iTunes Connect <span id="submitting-your-build-to-itunes-connect"></span></h1><p>Open up your ionic iOS project in Xcode. You can find your Xcode project file here: <strong><ionic project="" directory="">/platforms/ios/<ionic project="" name="">.xcodeproj</ionic></ionic></strong>.</p>
 <p>Verify the project has the correct Bundle Identifier you have created, and you have chosen the correct Distribution Certificate under <strong>Code Signing</strong> -&gt; <strong>Release</strong> in <strong>Build Settings</strong> (same certificates in Keychain Access):<br><img src="/images/Upload-iOS-App-to-TestFlight/code-signing.png" alt="Code Signing"></p>
 <p>Select <strong>Product</strong> -&gt; <strong>Archive</strong> from the top menu bar.</p>
 <p>After Xcode finishes archiving your project, click the <strong>Submit to App Store…</strong>.</p>
 <p>Choose your correct account and click <strong>Submit</strong> button. </p>
 <p>It may take a while as your build is uploaded.</p>
 <p>Once it completes, you should see the success message like this:</p>
-<h2 id="Some_problems_here:">Some problems here: <span id="some-problems-here"></span></h2><ul>
+<h2 id="Some-problems-here"><a href="#Some-problems-here" class="headerlink" title="Some problems here: "></a>Some problems here: <span id="some-problems-here"></span></h2><ul>
 <li><p>No <strong>Submit to App Store…</strong> button<br>This is because the account you use is not enrolled in <a href="https://developer.apple.com/programs/" target="_blank" rel="external">Apple Developer Program</a>. Check the <a href="#apple-developer-account">Apple Developer Account</a>.</p>
 </li>
 <li><p>Missing Developer Profile or Valid Signing Identity Not Found<br>This is because you use wrong iPhone Distribution Certificate or your certificate in the KeyChain Access is invalid or expired. Check the <a href="#valid-certificate-for-iphone-distribution">Valid Certificate for iPhone Distribution</a>.</p>
@@ -290,7 +291,7 @@
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -308,8 +309,8 @@
 </script>
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

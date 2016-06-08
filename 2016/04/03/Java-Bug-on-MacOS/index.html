@@ -3,25 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Java-Bug-on-MacOS | DdMad&#39;s Blog</title>
+  <title>Java Bug on MacOS | DdMad&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="While using the Mayocat, I have encountered that the theme page cannot load css and js correctly. The browser said that it did not parse the css and js file due to some CSS MIME and strict mode error.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java-Bug-on-MacOS">
+<meta property="og:title" content="Java Bug on MacOS">
 <meta property="og:url" content="http://ddmad.com/2016/04/03/Java-Bug-on-MacOS/index.html">
 <meta property="og:site_name" content="DdMad's Blog">
 <meta property="og:description" content="While using the Mayocat, I have encountered that the theme page cannot load css and js correctly. The browser said that it did not parse the css and js file due to some CSS MIME and strict mode error.">
 <meta property="og:image" content="http://ddmad.com/images/Java-Bug-on-MacOS/mayocat-bug.png">
 <meta property="og:image" content="http://ddmad.com/images/Java-Bug-on-MacOS/oracle-bug.png">
-<meta property="og:updated_time" content="2016-04-02T20:31:32.000Z">
+<meta property="og:updated_time" content="2016-06-08T05:21:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java-Bug-on-MacOS">
+<meta name="twitter:title" content="Java Bug on MacOS">
 <meta name="twitter:description" content="While using the Mayocat, I have encountered that the theme page cannot load css and js correctly. The browser said that it did not parse the css and js file due to some CSS MIME and strict mode error.">
+<meta name="twitter:image" content="http://ddmad.com/images/Java-Bug-on-MacOS/mayocat-bug.png">
   
   
     <link rel="icon" href="/favicon.jpg">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <div id="container">
@@ -182,7 +183,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Java-Bug-on-MacOS
+      Java Bug on MacOS
     </h1>
   
 
@@ -209,7 +210,7 @@
 <p><img src="/images/Java-Bug-on-MacOS/oracle-bug.png" alt="Oracle Bug"></p>
 <p>And then I found out that this bug was cause by JDK7, package <code>java.nio.file</code>, method <code>probeContentType(Path path)</code> and this feature was broken on Mac OS X (<a href="http://blog.byjean.eu/java/2013/08/22/making-jdk7-nio-filetypedetection-work-on-mac-osx.html" target="_blank" rel="external">More details here</a>). </p>
 <p>However, this bug should be fixed in JDK8, mine was still not working although my working environment was under JDK8. Then I checked the <a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8008345" target="_blank" rel="external">Oracle Bug Database</a> and it seems that it need a file <code>.mime.types</code>(you can download one <a href="https://github.com/jeantil/jdk7-mimeutils/raw/v1.0.0/mime.types" target="_blank" rel="external">sample file here</a> or simply get it from your <strong>apache server</strong> or <strong>nginx server</strong>) in $HOME/ directory.</p>
-<p>After adding the file <code>.mime.types</code> to <code>~/</code> (remember to clear the browser cache!), everything was ok then:).</p>
+<p>After adding the file <code>.mime.types</code> to <code>~/</code> (remember to clear the browser cache!), everything was ok then :).</p>
 
       
     </div>
@@ -250,7 +251,7 @@
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -268,8 +269,8 @@
 </script>
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 
