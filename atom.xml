@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ddmad.com/"/>
-  <updated>2016-06-08T05:21:00.000Z</updated>
+  <updated>2016-08-14T17:11:28.000Z</updated>
   <id>http://ddmad.com/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Restart Blogging</title>
+    <link href="http://ddmad.com/2016/08/15/Restart-Blogging/"/>
+    <id>http://ddmad.com/2016/08/15/Restart-Blogging/</id>
+    <published>2016-08-14T16:57:11.000Z</published>
+    <updated>2016-08-14T17:11:28.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Long time no blogging, and now it’s time to resume.&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;A-few-things-need-to-be-recorded&quot;&gt;&lt;a href=&quot;#A-few-things-need-to-be-recorded&quot; class=&quot;headerlink&quot; title=&quot;A few things need to be recorded&quot;&gt;&lt;/a&gt;A few things need to be recorded&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;Algorithm problems from Leetcode&lt;/li&gt;
+&lt;li&gt;Things learnt from recent projects&lt;/li&gt;
+&lt;li&gt;Things learnt from last internship&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Long time no blogging, and now it’s time to resume.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Non-tech" scheme="http://ddmad.com/tags/Non-tech/"/>
+    
+  </entry>
   
   <entry>
     <title>Java Bug on MacOS</title>
