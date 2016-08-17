@@ -190,12 +190,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution:"></a>Solution:</h2><p><a href="https://github.com/DdMad/OJSandBox/blob/master/LeetCode/Algorithm/002_AddTwoNumbers.java" target="_blank" rel="external">Leetcode 002: Add Two Numbers</a></p>
-<h2 id="Idea"><a href="#Idea" class="headerlink" title="Idea:"></a>Idea:</h2><p>Since the length of two linked list may be different, we firstly add up each node in the two list until one reaches the end. </p>
-<p>Then because we do not know which linked list reaches the end, we iterate both list (the finished list will not enter the loop statement), and add up the node with the carry <code>c</code>. </p>
-<p>In the end, we need to check whether the carry <code>c</code> is 0 or 1. If it is 1, then we need to add one more node to the result.</p>
-<p>This problem is not difficult and requires a bit more carefulness.</p>
-
+        <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution:"></a>Solution:</h2><p><a href="https://github.com/DdMad/OJSandBox/blob/master/LeetCode/Algorithm/002_AddTwoNumbers.java">Leetcode 002: Add Two Numbers</a><br>
       
     </div>
     
@@ -208,6 +203,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/08/18/Leetcode-002-Add-Two-Numbers/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -249,16 +248,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution:"></a>Solution:</h2><p><a href="https://github.com/DdMad/OJSandBox/blob/master/LeetCode/Algorithm/001_TwoSum.java" target="_blank" rel="external">Leetcode 001: Two Sum</a></p>
-<h2 id="Idea"><a href="#Idea" class="headerlink" title="Idea:"></a>Idea:</h2><p>The solution is to use a hashtable to store the information. The key is the <code>a[i]</code>‘s value and the value is the index, i.e. <code>i</code>. Once find some <code>a[i]</code> that there exists a key equals to <code>target - a[i]</code>, the index you stored into that key and the current index will be the answer.</p>
-<h2 id="Extra"><a href="#Extra" class="headerlink" title="Extra:"></a>Extra:</h2><p>The differences between <code>Hashtable</code> and <code>HashMap</code>:</p>
-<ol>
-<li>Hashtable is <strong>synchronized</strong>, but HashMap is not. So for <strong>non-threaded</strong> applications, here using <code>HashMap</code> is better since <strong>unsynchronized</strong> object perform better for this situation.</li>
-<li><code>Hashtable</code> does not allow either <code>null</code> key or value, but <code>HashMap</code> allows one <code>null</code> key and unlimited number of <code>null</code> values.</li>
-<li>In case you want to preserve some iteration order of the <code>HashMap</code>, you can easily cast to <code>LinkedHashMap</code>, which may be difficult if you use <code>Hashtable</code>.</li>
-<li>In case you want <strong>synchronization</strong> with <code>HashMap</code>, try <code>ConcurrentHashMap</code>.</li>
-</ol>
-
+        <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution:"></a>Solution:</h2><p><a href="https://github.com/DdMad/OJSandBox/blob/master/LeetCode/Algorithm/001_TwoSum.java">Leetcode 001: Two Sum</a><br>
       
     </div>
     
@@ -271,6 +261,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/08/18/Leetcode-001-Two-Sum/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
