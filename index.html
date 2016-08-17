@@ -102,7 +102,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/JDK7/" style="font-size: 10px;">JDK7</a> <a href="/tags/JSON/" style="font-size: 10px;">JSON</a> <a href="/tags/Jackson/" style="font-size: 10px;">Jackson</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/MacOSX/" style="font-size: 10px;">MacOSX</a> <a href="/tags/Non-tech/" style="font-size: 10px;">Non-tech</a> <a href="/tags/POJO/" style="font-size: 10px;">POJO</a> <a href="/tags/TestFlight/" style="font-size: 10px;">TestFlight</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/iOS/" style="font-size: 10px;">iOS</a> <a href="/tags/ionic/" style="font-size: 10px;">ionic</a> <a href="/tags/schedule/" style="font-size: 10px;">schedule</a>
+						<a href="/tags/JDK7/" style="font-size: 10px;">JDK7</a> <a href="/tags/JSON/" style="font-size: 10px;">JSON</a> <a href="/tags/Jackson/" style="font-size: 10px;">Jackson</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/MacOSX/" style="font-size: 10px;">MacOSX</a> <a href="/tags/Non-tech/" style="font-size: 10px;">Non-tech</a> <a href="/tags/POJO/" style="font-size: 10px;">POJO</a> <a href="/tags/TestFlight/" style="font-size: 10px;">TestFlight</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/hashtable/" style="font-size: 10px;">hashtable</a> <a href="/tags/iOS/" style="font-size: 10px;">iOS</a> <a href="/tags/ionic/" style="font-size: 10px;">ionic</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/leetcode/" style="font-size: 20px;">leetcode</a> <a href="/tags/linkedlist/" style="font-size: 10px;">linkedlist</a> <a href="/tags/schedule/" style="font-size: 10px;">schedule</a>
 					</div>
 				</section>
 				
@@ -163,6 +163,128 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-Leetcode-002-Add-Two-Numbers" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/18/Leetcode-002-Add-Two-Numbers/" class="article-date">
+  	<time datetime="2016-08-17T19:03:29.000Z" itemprop="datePublished">2016-08-18</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/18/Leetcode-002-Add-Two-Numbers/">Leetcode 002: Add Two Numbers</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution:"></a>Solution:</h2><p><a href="https://github.com/DdMad/OJSandBox/blob/master/LeetCode/Algorithm/002_AddTwoNumbers.java" target="_blank" rel="external">Leetcode 002: Add Two Numbers</a></p>
+<h2 id="Idea"><a href="#Idea" class="headerlink" title="Idea:"></a>Idea:</h2><p>Since the length of two linked list may be different, we firstly add up each node in the two list until one reaches the end. </p>
+<p>Then because we do not know which linked list reaches the end, we iterate both list (the finished list will not enter the loop statement), and add up the node with the carry <code>c</code>. </p>
+<p>In the end, we need to check whether the carry <code>c</code> is 0 or 1. If it is 1, then we need to add one more node to the result.</p>
+<p>This problem is not difficult and requires a bit more carefulness.</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/leetcode/">leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linkedlist/">linkedlist</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-Leetcode-001-Two-Sum" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/18/Leetcode-001-Two-Sum/" class="article-date">
+  	<time datetime="2016-08-17T18:38:11.000Z" itemprop="datePublished">2016-08-18</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/18/Leetcode-001-Two-Sum/">Leetcode 001: Two Sum</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution:"></a>Solution:</h2><p><a href="https://github.com/DdMad/OJSandBox/blob/master/LeetCode/Algorithm/001_TwoSum.java" target="_blank" rel="external">Leetcode 001: Two Sum</a></p>
+<h2 id="Idea"><a href="#Idea" class="headerlink" title="Idea:"></a>Idea:</h2><p>The solution is to use a hashtable to store the information. The key is the <code>a[i]</code>‘s value and the value is the index, i.e. <code>i</code>. Once find some <code>a[i]</code> that there exists a key equals to <code>target - a[i]</code>, the index you stored into that key and the current index will be the answer.</p>
+<h2 id="Extra"><a href="#Extra" class="headerlink" title="Extra:"></a>Extra:</h2><p>The differences between <code>Hashtable</code> and <code>HashMap</code>:</p>
+<ol>
+<li>Hashtable is <strong>synchronized</strong>, but HashMap is not. So for <strong>non-threaded</strong> applications, here using <code>HashMap</code> is better since <strong>unsynchronized</strong> object perform better for this situation.</li>
+<li><code>Hashtable</code> does not allow either <code>null</code> key or value, but <code>HashMap</code> allows one <code>null</code> key and unlimited number of <code>null</code> values.</li>
+<li>In case you want to preserve some iteration order of the <code>HashMap</code>, you can easily cast to <code>LinkedHashMap</code>, which may be difficult if you use <code>Hashtable</code>.</li>
+<li>In case you want <strong>synchronization</strong> with <code>HashMap</code>, try <code>ConcurrentHashMap</code>.</li>
+</ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hashtable/">hashtable</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/leetcode/">leetcode</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-Restart-Blogging" class="article article-type-post" itemscope itemprop="blogPost">
   

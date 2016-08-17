@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: JDK7 | DdMad&#39;s Blog</title>
+  <title>Leetcode 002: Add Two Numbers | DdMad&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="DdMad's Blog">
-<meta property="og:url" content="http://ddmad.com/tags/JDK7/index.html">
+  <meta name="description" content="Solution:Leetcode 002: Add Two Numbers
+Idea:Since the length of two linked list may be different, we firstly add up each node in the two list until one reaches the end. 
+Then because we do not know wh">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Leetcode 002: Add Two Numbers">
+<meta property="og:url" content="http://ddmad.com/2016/08/18/Leetcode-002-Add-Two-Numbers/index.html">
 <meta property="og:site_name" content="DdMad's Blog">
-<meta property="og:description">
+<meta property="og:description" content="Solution:Leetcode 002: Add Two Numbers
+Idea:Since the length of two linked list may be different, we firstly add up each node in the two list until one reaches the end. 
+Then because we do not know wh">
+<meta property="og:updated_time" content="2016-08-17T19:14:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DdMad's Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Leetcode 002: Add Two Numbers">
+<meta name="twitter:description" content="Solution:Leetcode 002: Add Two Numbers
+Idea:Since the length of two linked list may be different, we firstly add up each node in the two list until one reaches the end. 
+Then because we do not know wh">
   
   
     <link rel="icon" href="/favicon.jpg">
@@ -162,53 +169,88 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-Leetcode-002-Add-Two-Numbers" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/04/03/Java-Bug-on-MacOS/" class="archive-article-date">
-  	<time datetime="2016-04-02T20:04:53.000Z" itemprop="datePublished">Apr 3</time>
+    <div class="article-meta">
+      <a href="/2016/08/18/Leetcode-002-Add-Two-Numbers/" class="article-date">
+  	<time datetime="2016-08-17T19:03:29.000Z" itemprop="datePublished">2016-08-18</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/04/03/Java-Bug-on-MacOS/">Java Bug on MacOS</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Leetcode 002: Add Two Numbers
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JDK7/">JDK7</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MacOSX/">MacOSX</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bug/">bug</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/leetcode/">leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linkedlist/">linkedlist</a></li></ul>
 	</div>
 
-          
+        
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution:"></a>Solution:</h2><p><a href="https://github.com/DdMad/OJSandBox/blob/master/LeetCode/Algorithm/002_AddTwoNumbers.java" target="_blank" rel="external">Leetcode 002: Add Two Numbers</a></p>
+<h2 id="Idea"><a href="#Idea" class="headerlink" title="Idea:"></a>Idea:</h2><p>Since the length of two linked list may be different, we firstly add up each node in the two list until one reaches the end. </p>
+<p>Then because we do not know which linked list reaches the end, we iterate both list (the finished list will not enter the loop statement), and add up the node with the carry <code>c</code>. </p>
+<p>In the end, we need to check whether the carry <code>c</code> is 0 or 1. If it is 1, then we need to add one more node to the result.</p>
+<p>This problem is not difficult and requires a bit more carefulness.</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/08/18/Leetcode-001-Two-Sum/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Leetcode 001: Two Sum</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<section id="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'ddmad'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
 
 </div>
       <footer id="footer">
@@ -234,9 +276,9 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}
