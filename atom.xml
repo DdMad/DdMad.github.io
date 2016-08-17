@@ -66,11 +66,11 @@
     </summary>
     
     
+      <category term="Java" scheme="http://ddmad.com/tags/Java/"/>
+    
       <category term="MacOSX" scheme="http://ddmad.com/tags/MacOSX/"/>
     
       <category term="bug" scheme="http://ddmad.com/tags/bug/"/>
-    
-      <category term="Java" scheme="http://ddmad.com/tags/Java/"/>
     
       <category term="JDK7" scheme="http://ddmad.com/tags/JDK7/"/>
     
@@ -115,9 +115,9 @@
     </summary>
     
     
-      <category term="Java" scheme="http://ddmad.com/tags/Java/"/>
-    
       <category term="Jackson" scheme="http://ddmad.com/tags/Jackson/"/>
+    
+      <category term="Java" scheme="http://ddmad.com/tags/Java/"/>
     
       <category term="JSON" scheme="http://ddmad.com/tags/JSON/"/>
     
