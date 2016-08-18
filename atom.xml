@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ddmad.com/"/>
-  <updated>2016-08-17T19:37:48.000Z</updated>
+  <updated>2016-08-17T19:35:48.000Z</updated>
   <id>http://ddmad.com/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 003: Longest Substring Without Repeating Characters</title>
+    <link href="http://ddmad.com/2016/08/18/Leetcode-003-Longest-Substring-Without-Repeating-Characters/"/>
+    <id>http://ddmad.com/2016/08/18/Leetcode-003-Longest-Substring-Without-Repeating-Characters/</id>
+    <published>2016-08-17T19:15:28.000Z</published>
+    <updated>2016-08-17T19:35:48.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution:&quot;&gt;&lt;/a&gt;Solution:&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/DdMad/OJSandBox/blob/master/LeetCode/Algorithm/003_LongestSubstringWithoutRepeatingCharacters.java&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Leetcode 003: Longest Substring Without Repeating Characters&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Idea&quot;&gt;&lt;a href=&quot;#Idea&quot; class=&quot;headerlink&quot; title=&quot;Idea:&quot;&gt;&lt;/a&gt;Idea:&lt;/h2&gt;&lt;p&gt;For this question, we create an array to record the previous occurrence index of certain character. For example, &lt;code&gt;a[(int)&amp;#39;A&amp;#39;]&lt;/code&gt; represents the last occurrence index of &lt;code&gt;&amp;#39;A&amp;#39;&lt;/code&gt;. Also, tow pointers, &lt;code&gt;beg&lt;/code&gt; and &lt;code&gt;end&lt;/code&gt;, is needed. &lt;code&gt;beg&lt;/code&gt; points to where we start our substring, and &lt;code&gt;end&lt;/code&gt; points to the end of the longest substring starting from &lt;code&gt;beg&lt;/code&gt;. &lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Solution&quot;&gt;&lt;a href=&quot;#Solution&quot; class=&quot;headerlink&quot; title=&quot;Solution:&quot;&gt;&lt;/a&gt;Solution:&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/DdMad/OJSandBox/
+    
+    </summary>
+    
+    
+      <category term="leetcode" scheme="http://ddmad.com/tags/leetcode/"/>
+    
+      <category term="java" scheme="http://ddmad.com/tags/java/"/>
+    
+      <category term="two-pointers" scheme="http://ddmad.com/tags/two-pointers/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 002: Add Two Numbers</title>
@@ -128,11 +154,11 @@
     </summary>
     
     
+      <category term="Java" scheme="http://ddmad.com/tags/Java/"/>
+    
       <category term="MacOSX" scheme="http://ddmad.com/tags/MacOSX/"/>
     
       <category term="bug" scheme="http://ddmad.com/tags/bug/"/>
-    
-      <category term="Java" scheme="http://ddmad.com/tags/Java/"/>
     
       <category term="JDK7" scheme="http://ddmad.com/tags/JDK7/"/>
     
@@ -177,9 +203,9 @@
     </summary>
     
     
-      <category term="Java" scheme="http://ddmad.com/tags/Java/"/>
-    
       <category term="Jackson" scheme="http://ddmad.com/tags/Jackson/"/>
+    
+      <category term="Java" scheme="http://ddmad.com/tags/Java/"/>
     
       <category term="JSON" scheme="http://ddmad.com/tags/JSON/"/>
     

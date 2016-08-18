@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2015/12 | DdMad&#39;s Blog</title>
+  <title>Leetcode 003: Longest Substring Without Repeating Characters | DdMad&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="DdMad's Blog">
-<meta property="og:url" content="http://ddmad.com/archives/2015/12/index.html">
+  <meta name="description" content="Solution:Leetcode 003: Longest Substring Without Repeating Characters
+Idea:For this question, we create an array to record the previous occurrence index of certain character. For example, a[(int)&amp;#39;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Leetcode 003: Longest Substring Without Repeating Characters">
+<meta property="og:url" content="http://ddmad.com/2016/08/18/Leetcode-003-Longest-Substring-Without-Repeating-Characters/index.html">
 <meta property="og:site_name" content="DdMad's Blog">
-<meta property="og:description">
+<meta property="og:description" content="Solution:Leetcode 003: Longest Substring Without Repeating Characters
+Idea:For this question, we create an array to record the previous occurrence index of certain character. For example, a[(int)&amp;#39;">
+<meta property="og:updated_time" content="2016-08-17T19:35:48.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DdMad's Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Leetcode 003: Longest Substring Without Repeating Characters">
+<meta name="twitter:description" content="Solution:Leetcode 003: Longest Substring Without Repeating Characters
+Idea:For this question, we create an array to record the previous occurrence index of certain character. For example, a[(int)&amp;#39;">
   
   
     <link rel="icon" href="/favicon.jpg">
@@ -162,53 +166,85 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-Leetcode-003-Longest-Substring-Without-Repeating-Characters" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/12/01/plan-for-y3s2/" class="archive-article-date">
-  	<time datetime="2015-12-01T07:43:54.000Z" itemprop="datePublished">Dec 1</time>
+    <div class="article-meta">
+      <a href="/2016/08/18/Leetcode-003-Longest-Substring-Without-Repeating-Characters/" class="article-date">
+  	<time datetime="2016-08-17T19:15:28.000Z" itemprop="datePublished">2016-08-18</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/01/plan-for-y3s2/">Schedule For Year 3 Sem 2</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Leetcode 003: Longest Substring Without Repeating Characters
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/schedule/">schedule</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/leetcode/">leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/two-pointers/">two-pointers</a></li></ul>
 	</div>
 
-          
+        
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution:"></a>Solution:</h2><p><a href="https://github.com/DdMad/OJSandBox/blob/master/LeetCode/Algorithm/003_LongestSubstringWithoutRepeatingCharacters.java" target="_blank" rel="external">Leetcode 003: Longest Substring Without Repeating Characters</a></p>
+<h2 id="Idea"><a href="#Idea" class="headerlink" title="Idea:"></a>Idea:</h2><p>For this question, we create an array to record the previous occurrence index of certain character. For example, <code>a[(int)&#39;A&#39;]</code> represents the last occurrence index of <code>&#39;A&#39;</code>. Also, tow pointers, <code>beg</code> and <code>end</code>, is needed. <code>beg</code> points to where we start our substring, and <code>end</code> points to the end of the longest substring starting from <code>beg</code>. </p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/08/18/Leetcode-002-Add-Two-Numbers/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Leetcode 002: Add Two Numbers</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<section id="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'ddmad'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
 
 </div>
       <footer id="footer">
@@ -234,8 +270,8 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false
