@@ -5,19 +5,16 @@
   
   <title>Leetcode 003: Longest Substring Without Repeating Characters | DdMad&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Solution:Leetcode 003: Longest Substring Without Repeating Characters
-Idea:For this question, we create an array to record the previous occurrence index of certain character. For example, a[(int)&amp;#39;">
+  <meta name="description" content="Solution:Leetcode 003: Longest Substring Without Repeating Characters">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 003: Longest Substring Without Repeating Characters">
 <meta property="og:url" content="http://ddmad.com/2016/08/18/Leetcode-003-Longest-Substring-Without-Repeating-Characters/index.html">
 <meta property="og:site_name" content="DdMad's Blog">
-<meta property="og:description" content="Solution:Leetcode 003: Longest Substring Without Repeating Characters
-Idea:For this question, we create an array to record the previous occurrence index of certain character. For example, a[(int)&amp;#39;">
-<meta property="og:updated_time" content="2016-08-17T19:35:48.000Z">
+<meta property="og:description" content="Solution:Leetcode 003: Longest Substring Without Repeating Characters">
+<meta property="og:updated_time" content="2016-08-18T13:43:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Leetcode 003: Longest Substring Without Repeating Characters">
-<meta name="twitter:description" content="Solution:Leetcode 003: Longest Substring Without Repeating Characters
-Idea:For this question, we create an array to record the previous occurrence index of certain character. For example, a[(int)&amp;#39;">
+<meta name="twitter:description" content="Solution:Leetcode 003: Longest Substring Without Repeating Characters">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -207,8 +204,9 @@ Idea:For this question, we create an array to record the previous occurrence ind
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution:"></a>Solution:</h2><p><a href="https://github.com/DdMad/OJSandBox/blob/master/LeetCode/Algorithm/003_LongestSubstringWithoutRepeatingCharacters.java" target="_blank" rel="external">Leetcode 003: Longest Substring Without Repeating Characters</a></p>
-<h2 id="Idea"><a href="#Idea" class="headerlink" title="Idea:"></a>Idea:</h2><p>For this question, we create an array to record the previous occurrence index of certain character. For example, <code>a[(int)&#39;A&#39;]</code> represents the last occurrence index of <code>&#39;A&#39;</code>. Also, tow pointers, <code>beg</code> and <code>end</code>, is needed. <code>beg</code> points to where we start our substring, and <code>end</code> points to the end of the longest substring starting from <code>beg</code>. </p>
+        <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution:"></a>Solution:</h2><p><a href="https://github.com/DdMad/OJSandBox/blob/master/LeetCode/Algorithm/003_LongestSubstringWithoutRepeatingCharacters.java" target="_blank" rel="external">Leetcode 003: Longest Substring Without Repeating Characters</a><br><a id="more"></a></p>
+<h2 id="Idea"><a href="#Idea" class="headerlink" title="Idea:"></a>Idea:</h2><p>For this question, we create an array to record the previous occurrence index of certain character. For example, <code>a[(int)&#39;A&#39;]</code> represents the last occurrence index of <code>&#39;A&#39;</code>. Also, tow pointers, <code>beg</code> and <code>end</code>, is needed. <code>beg</code> points to where we start our substring, and <code>end</code> points to the end of the longest substring starting from <code>beg</code>.<br>We continuously move <code>end</code> pointer back until we encounter <code>i</code> such that <code>beg &lt;= a[(int)s.charAt(i)]</code>, which means there will be repeating characters (<code>s.charAt(a[(int)s.charAt(i)])</code> and <code>s.charAt(i)</code> should be the same) if we add current character to the substring. At this time, we calculate the lenght current substring and compare to the <code>max</code>.</p>
+<h2 id="Extra"><a href="#Extra" class="headerlink" title="Extra:"></a>Extra:</h2><p>After finishing the scanning, we need to check again the lenght of substring from <code>beg</code> to <code>end</code>, comparing with the <code>max</code> length, before return the result.</p>
 
       
     </div>
